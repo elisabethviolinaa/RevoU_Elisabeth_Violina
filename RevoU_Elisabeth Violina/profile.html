@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - My School</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/images/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#message">Message Us</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br>  <br>
+    <center>
+      <h1>Our Profile</h1>
+    </center>
+
+    <main>
+      <section class="about-us">
+        <h2>About Us</h2>
+        <p>
+          My School is a leading educational institution that provides quality
+          education to students from all backgrounds. We believe that education
+          is the key to unlocking one's full potential, and we strive to create
+          a learning environment that is engaging, supportive, and inclusive.
+          Our experienced faculty and staff are committed to providing students
+          with the knowledge, skills, and resources they need to succeed in
+          their academic and personal pursuits.
+        </p>
+      </section>
+
+      <section class="vision">
+        <h2>Vision</h2>
+        <p>
+          Our vision is to be a world-class educational institution that
+          prepares students for success in a rapidly changing global society. We
+          aim to provide our students with a comprehensive and well-rounded
+          education that prepares them to be lifelong learners, critical
+          thinkers, and responsible citizens.
+        </p>
+      </section>
+
+      <section class="mission">
+        <h2>Mission</h2>
+        <p>
+          Our mission is to provide our students with a supportive and
+          challenging learning environment that fosters intellectual curiosity,
+          creativity, and personal growth. We are committed to promoting
+          academic excellence, diversity, and social responsibility, and to
+          preparing our students to be leaders in their communities and beyond.
+        </p>
+      </section>
+    </main>
+    <br> <br>
+    <footer>
+      <p>Created by <span id="created-by"></span></p>
+    </footer>
+    <script>
+      const nama = sessionStorage.getItem("nama");
+      document.getElementById("created-by").innerHTML = nama;
+    </script>
+  </body>
+</html>
